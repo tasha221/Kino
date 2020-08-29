@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #1f1f1f;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+#header {
+    min-height: 50px;
+    background-color: #100303;
+}
+
+#name {
+    padding-left: 5%;
+    padding-top: 5px;
+    position: relative;
+    width: 45%;
+    display: block;
+    float: left;
+    font-size: 2em;
+    font-family: Georgia, sans-serif;
+    font-weight: 100;
+}
+
+#header_right {
+    padding-top: 5px;
+    padding-right: 5%;
+    width: 45%;
+    display: block;
+    float: right;
+    justify-content: right;
+}
+
+#enter {
+    float: right;
+}
+
+#registr {
+    float: right;
+}
+
+#my_profile {
+    float: right;
+    z-index: 1;
+    position: relative;
+}
+
+#footer {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    opacity: 0.4;
+}
+
+button {
+    width: auto;
+    height: 2em;
+    margin: 5px;
+    border-radius: 0.5em;
+    background-color: #000000;
+    color: whitesmoke;
+    border-width: thin;
+    outline: none;
+}
+
+#content {
+    padding-left: 5%;
+}
+
+#block_film {
+    width: 210px;
+    height: 335px;
+    margin: 5px;
+    margin-top: 15px;
+    position: relative;
+    display: block;
+    float: left;
+    font-family: "Gill Sans MT", sans-serif;
+    font-size: 1.1em;
+    z-index: 1;
+}
+
+#pic {
+    border-radius: 5%;
+    opacity: 1;
+    transition: opacity 124ms linear, transform 124ms linear;
+}
+
+a:hover #pic {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+
+#pic_one {
+    height: auto;
+    width: 35%;
+    float: left;
+    margin-right: 10px;
+}
+
+#block_film_one {
+    margin-top: 15px;;
+    width: 90%;
+}
+
+#film_name_one {
+    display: block;
+    font-size: 2em;
+    margin: 15px;
+    width: 90%;
+}
+
+#film_descr {
+    font-family: serif;
+    font-style: normal;
+    display: block;
+    float: left;
+    margin: 10px;
+
+}
+
+p {
+    text-align: justify;
+}
+
+#tolst {
+    font-weight: 900;
+    color: #ff8d01;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.content_log {
+    margin:5% 25% 15% 25%;
+    width:50%;
+    float: left;
+    text-align: center;
+}
+
+#entrance {
+    background-color: black;
+    padding: 5px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+.log {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+input {
+    height: 2em;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 1.2em;
+    padding-left: 5px;
+    width: 90%;
+    border-radius: 0.8em;
+    border-width: thin;
+    outline: none;
+}
+
+.log_button {
+    width: 50%;
+    /*height: 3em;*/
+    font-size: 1.1em;
+}
+
+.wrapper:active #menu {
+    display: block;
+}
+
+#menu:hover {
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+    float: right;
+}
+
+.wrapper_genre {
+    position: relative;
+    float: left;
+
+    display: block;
+    width: 90%;
+}
+
+#menu {
+    position: absolute;
+    top: auto;
+    display: none;
+    z-index: 5;
+}
+
+#menu:checked + button {
+    display: block;
+    width: 100%;
+
+}
+
+#choose_genre_button {
+    float: left;
+    height: 2.5em;
+    margin-top: 10px;
+    background-color: #1f1f1f;
+    min-width: 150px;
+    border-width: thin;
+}
+
+.wrapper_genre:active #menu_genre {
+    display: block;
+}
+
+#menu_genre:hover {
+    display: block;
+}
+
+#menu_genre {
+    position: absolute;
+    top: auto;
+    display: none;
+    z-index: 5;
+}
+
+#menu_genre:checked + button {
+    display: block;
+    width: 100%;
+
+}
+
+#menu_genre #notinvis {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    background-color: black;
+    font-size: 0.9em;
+    margin-top: 0;
+    height: 3em;
+    padding: 0 5px 5px 5px;
+    min-width: 150px;
+    opacity: 0.9;
+}
+
+#menu_genre #invis {
+    opacity: 0;
+    margin: 5px;
+}
+
+#menu_genre button {
+    border-color: #1f1f1f;
+    border-width: 0;
+}
+
+#menu_genre a {
+    font-size: 1.2em;
+    color: #db7901;
+    font-weight: 600;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    background-color: black;
+    font-size: 0.9em;
+    margin-top: 0;
+    height: 2em;
+    padding: 0 5px 5px 5px;
+    min-width: 150px;
+}
+
+#invis {
+    opacity: 0;
+}
+
+#film_watched {
+    background-color: #1f1f1f;
+    margin-left: 25px;
+}
+
+#film_unwatched {
+    background-color: #db7901;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+
+
+.tabs {
+    font-size: 0;
+    max-width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    /*border: 1px solid #e0e0e0;*/
+    padding: 10px 15px;
+    font-size: 16px;
+
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn1-1:checked~#add_movie,
+#tab-btn1-2:checked~#del_actor,
+#tab-btn1-3:checked~#del_producer,
+#tab-btn1-4:checked~#del_genre,
+#tab-btn1-5:checked~#add_actor,
+#tab-btn1-6:checked~#add_producer,
+#tab-btn1-7:checked~#add_genre {
+    display: block;
+}
+
+#tab-btn-1:checked~#add_movie,
+#tab-btn-2:checked~#add_actor,
+#tab-btn-3:checked~#add_producer,
+#tab-btn-4:checked~#add_actor_film,
+#tab-btn-5:checked~#add_producer_film,
+#tab-btn-6:checked~#add_genre_film {
+    display: block;
+}
+
+
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: black;
+    /*border: 1px solid #e0e0e0;*/
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+
+}
+
+.tabs>label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+    background-color: #181818;
+    /*border-bottom: 1px solid #fff;*/
+}
+
+.span_add {
+    width: 15%;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#input_add {
+    width: 50%;
+    display: inline-block;
+}
+
+textarea {
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 1.2em;
+    padding-left: 5px;
+    width: 50%;
+    border-radius: 0.8em;
+    border-width: thin;
+    outline: none;
+}
+
+select {
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 1.2em;
+    padding-left: 5px;
+    border-radius: 0.8em;
+    border-width: thin;
+    outline: none;
+    width: 30%;
+}
